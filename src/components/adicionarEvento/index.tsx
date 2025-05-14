@@ -11,8 +11,14 @@ export default function AdicionarEvento(){
                 <form action="" className="space-y-3">
                     <Input placeholder="Titulo" name="tituloDoEvento" type="text" required />
                     <Input placeholder="Descrição" name="descricaoDoEvento" type="text" required />
-                    <Input placeholder="Data" type="date" name="dataDoEvento" required/>
-                    <Input placeholder="Data" type="time" name="horaDoEvento" required/>
+                    <div className="w-full">
+                    <p className=" text-sm ml-3 text-muted-foreground">Data</p>
+                    <Input placeholder="" type="date" name="dataDoEvento"/>
+                    </div>
+                    <div className="w-full">
+                <p className=" text-sm ml-3 text-muted-foreground">Hora</p>
+                <Input  type="time" name="horaDoEvento"/>
+                </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-3">
                     <div className="w-full" >
                         <p className=" text-sm ml-3 text-muted-foreground">Banner</p>

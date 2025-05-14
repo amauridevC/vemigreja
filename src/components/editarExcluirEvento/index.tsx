@@ -43,8 +43,15 @@ export default function EditarExcluirEvento(){
             <form action="" className="space-y-3">
                 <Input placeholder="Nome do evento" name="nomeDoEvento"/>
                 <Input placeholder="Descrição" name="descricaoDoEvento"/>
+                <div className="w-full">
+                <p className=" text-sm ml-3 text-muted-foreground">Data</p>
                 <Input placeholder="" type="date" name="dataDoEvento"/>
+                </div>
+                <div className="w-full">
+                <p className=" text-sm ml-3 text-muted-foreground">Hora</p>
                 <Input  type="time" name="horaDoEvento"/>
+                </div>
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-3 ">
                     <div >
                         <p className=" text-sm ml-3 text-muted-foreground">Banner</p>
